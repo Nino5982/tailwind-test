@@ -8,7 +8,8 @@ function burger() {
         navigation.classList.toggle('burger-active')
         logInButton.classList.toggle('actions-active')
     })
-     
 }
 burger();
+
+
 
