@@ -17,7 +17,7 @@ module.exports = {
         darkGreay:'#2A3342',
         lightGreay:'#556987',
         footerGray: '#8896AB',
-      },
+      }
     },
   },
   plugins: [],
