@@ -4,11 +4,6 @@
 
 @layer base {
     body {
-<<<<<<< HEAD
         @apply fontFamily,
-=======
-        @apply font-poppins,
-
->>>>>>> 1c188ff5d98bed6c3c3fc7e5bb376690c7b08ce1
     }
 }
