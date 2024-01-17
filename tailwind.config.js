@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./index.html"],
   theme: {
     screens: {
       lg: {max: '1999.99px'},
@@ -10,10 +10,10 @@ module.exports = {
     },
     extend: {
       fontFamily:{
-        poppins: ['Poppins', 'sans-serif']
+        nino: ['Poppins', 'sans-serif']
       },
       backgroundColor: {
-        green:'#22C55E',
+        greeny:'#22C55E',
         darkGreay:'#2A3342',
         lightGreay:'#556987',
         footerGray: '#8896AB',
