@@ -448,6 +448,11 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+.label{
+  @a
+    
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
