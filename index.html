@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
-    <link href="src/css/output.css" rel="stylesheet" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css"/> -->
+<link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+
+
+    <link href="src/css/output.css" rel="stylesheet" />
+
+
+
+
   </head>
 
   <body>
@@ -30,22 +40,34 @@
         <ul
           class="sm:hidden flex justify-between gap-12 font-medium text-base items-center text-[#556987] m-auto group-[.burger-active]:flex-col group-[.burger-active]:absolute group-[.burger-active]:top-10 group-[.burger-active]:flex"
         >
-          <li>
+          <li class="inline-block">
             <a
               id="li"
-              class="font-nino btn-primary text-styles relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-[#556987] after:w-0 after:transition-all hover:after:w-full"
+              class="font-nino text-styles relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-[#556987] after:w-0 after:transition-all hover:after:w-full"
               href="##"
-              >Product</a
+              >home</a
             >
           </li>
-          <li>
+          <li class="group relative">
             <a
               href="##"
               class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-[#556987] after:w-0 after:transition-all hover:after:w-full"
-              >Features</a
-            >
+              >about
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 inline-block">
+              <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+            </svg>
+            </a
+            > 
+            <div class="group-hover:block dropdown absolute -left-4 top-full transition-all ease-linear  bg-white hidden">
+              <ul class="dropdonw-menu mt-2">
+                <li class="dropdonw-menu-item p-2 w-[150px]"><a href="#">Project</a></li>
+                <li class="dropdonw-menu-item p-2 w-[150px]"><a href="#">Consortium</a></li>
+                <li class="dropdonw-menu-item p-2 w-[150px]"><a href="#">Dessemination</a></li>
+              </ul>
+            </div>
+           
           </li>
-          <li>
+          <li class="yyy">
             <a
               href="##"
               class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-[#556987] after:w-0 after:transition-all hover:after:w-full"
@@ -76,13 +98,13 @@
       >
         <button
           type="button"
-          class="md:hidden h-10 px-5 text-[#556987] transition-colors duration-75 border-[#22C55E] rounded-lg focus:shadow-outline hover:bg-[#22C55E] hover:text-indigo-100 group-[.actions-active]:block"
+          class="btn-element md:hidden btn-primary"
         >
           log in
         </button>
         <button
           type="button"
-          class="md:hidden h-10 px-5 text-[#556987] transition-colors duration-75 border-[#22C55E] rounded-lg focus:shadow-outline hover:bg-[#22C55E] hover:text-indigo-100"
+          class="btn-element md:hidden btn-primary"
         >
           sign up
         </button>
@@ -103,8 +125,9 @@
         ></span>
       </div>
     </header>
-    <section id="features" class="mt-11">
-      <span class="label">FEATURES</span>
+    <main class="bg-slate-500">
+    <section id="features" class="mt-11 ">
+      <span class="label btn-primary">FEATURES</span>
       <div class="-features-header-wrapper">
         <h2>Gain more insight into how people use your</h2>
         <p>
@@ -137,9 +160,153 @@
               </defs>
             </svg>
           </div>
+          <div class="features-container-content">
+            <h3 class="features-container-header">Measure your performance</h3>
+            <p class="features-container-text">Stay connected with your team and make quick decisions wherever you are. </p>
+          </div>
         </div>
       </div>
     </section>
+<div class="bg-slate-500 w-96 m-auto">
+
+<!--  npm
+<div class="your-class h-full">
+  <div class="slide"><img src="src/images/New folder/1.jpg" alt=""></div> 
+  <div class="slide"><img src="src/images/New folder/2.jpg" alt=""></div> 
+  <div class="slide"><img src="src/images/New folder/5.png" alt=""></div> 
+  <div class="slide"><img src="src/images/New folder/7.jpg" alt=""></div> 
+</div>
+
+</div> -->
+
+<!-- w3school carousel -->
+<!-- <div class="container relative top">
+  <div class="mySlides ">
+    <img src="src/images/New folder/1.jpg"  alt="">
+  </div>
+
+  <div class="mySlides">    
+    <img src="src/images/New folder/2.jpg" alt="" >
+  </div>
+
+  <div class="mySlides">   
+    <img src="src/images/New folder/3.png"  alt="">
+  </div>
+
+    
+  <button class="prev cursor-pointer absolute top-1/2 w-auto p-4 -mt-12 text-white text-xl rounded select-none" onclick="plusSlides(-1)">❮</button>
+  <a class="next cursor-pointer absolute top-1/2 right-0 w-auto p-4 -mt-12 text-white text-xl rounded select-none" onclick="plusSlides(1)">❯</button>
+ -->
+
+
+
+<!-- tailwind carousel -->
+<!-- swiper -->
+
+<div
+      class="mx-auto flex h-screen w-full items-center justify-center bg-gray-200 py-20"
+    >
+      <div class="group relative cursor-pointer py-2">
+        <div class="flex items-center justify-between space-x-5 bg-white px-4">
+          <a
+            class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4"
+        
+          >
+            Our Products
+          </a>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </span>
+        </div>
+        <ul
+          class="hidden absolute z-50  w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:flex"
+          onClick=""
+        >
+          <li><a
+            class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+            >Product One</a
+          ></li>
+ <li>
+          <a
+            class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+            >Product Two</a
+          >
+        </li>
+        <li>
+          <a
+            class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+            >Product Three
+          </a>
+        </li>
+        <ul>
+          <a
+            class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+            >Product Four
+          </a>
+        </ul>
+        </ul>
+      </div>
+    </div>
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="src/images/New folder/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="src/images/New folder/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="src/images/New folder/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="src/images/New folder/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="src/images/New folder/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="src/images/New folder/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="src/images/New folder/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="src/images/New folder/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="src/images/New folder/2.jpg" alt=""></div>
+  </div>
+  <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+
+
+
+
+
+<!-- /load more 
+ -->
+
+
+ <div id="card-container">
+</div>
+<div class="card-actions">
+  <button id="load-more">Load more</button>
+  <span>Showing 
+    <span id="card-count"></span> of 
+    <span id="card-total"></span> cards      
+  </span>
+</div>
+
+
+
+
+
+</main>
+
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script> -->
+<script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="src/js/script.js"></script>
   </body>
 </html>

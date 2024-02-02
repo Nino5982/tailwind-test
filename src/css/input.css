@@ -4,13 +4,11 @@
 
 
 
-/* .btn-primary {
-    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-  } */
+
 
   @layer components {
     .btn-primary {
-      @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+      @apply  h-10 py-2 px-4 text-[#556987] font-semibold rounded-lg shadow-md hover:bg-[#22C55E] border-[#22C55E]  transition-colors duration-75 focus:ring-2 focus:ring-opacity-75 hover:text-indigo-100
     }
-    
   }
+ 
